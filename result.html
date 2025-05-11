@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <style>
+        .results { display: flex; gap: 20px; margin: 20px 0; }
+        .image-box { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        img { max-width: 400px; max-height: 400px; }
+    </style>
+</head>
+<body>
+    <h1>Compression Results</h1>
+    <div class="results">
+        <div class="image-box">
+            <h3>Original Image</h3>
+            <img src="{{ original }}" alt="Original">
+        </div>
+        <div class="image-box">
+            <h3>Compressed Image</h3>
+            <img src="{{ compressed }}" alt="Compressed">
+        </div>
+    </div>
+    <p><strong>Compression Ratio:</strong> {{ ratio }}</p>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>

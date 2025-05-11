@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Compression</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .upload-box { border: 2px dashed #ccc; padding: 30px; text-align: center; margin: 20px 0; }
+        input[type="file"] { margin: 10px 0; }
+        button { background: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Image Compression using Vector Quantization</h1>
+    <div class="upload-box">
+        <form method="post" enctype="multipart/form-data" action="/upload">
+            <input type="file" name="file" accept="image/*" required>
+            <br>
+            <button type="submit">Upload & Compress</button>
+        </form>
+    </div>
+</body>
+</html>
